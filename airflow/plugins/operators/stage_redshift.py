@@ -48,8 +48,8 @@ class StageToRedshiftOperator(BaseOperator):
         #json = "FORMAT AS JSON {} "
         songs_copy = ("""    COPY staging_songs 
                              FROM 's3://udacity-dend/song_data'
-                             ACCESS_KEY_ID 'AKIA3O5GHQSIHRYCCE2Z'
-                             SECRET_ACCESS_KEY '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'
+                             ACCESS_KEY_ID ''
+                             SECRET_ACCESS_KEY ''
                              region 'us-west-2'
                              emptyasnull
                              blanksasnull
@@ -62,8 +62,8 @@ class StageToRedshiftOperator(BaseOperator):
         
         events_copy = (  """ COPY staging_events
                              FROM 's3://udacity-dend/log_data'
-                             ACCESS_KEY_ID 'AKIA3O5GHQSIHRYCCE2Z'
-                             SECRET_ACCESS_KEY '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'
+                             ACCESS_KEY_ID ''
+                             SECRET_ACCESS_KEY ''
                              region 'us-west-2'
                              emptyasnull
                              blanksasnull
